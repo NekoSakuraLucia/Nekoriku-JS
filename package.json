@@ -6,7 +6,8 @@
     "type": "git",
     "url": "git+https://github.com/NekoSakuraLucia/Nekoriku-JS.git"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "bugs": {
     "url": "https://github.com/NekoSakuraLucia/Nekoriku-JS/issues"
   },
