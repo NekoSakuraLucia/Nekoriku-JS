@@ -2,6 +2,15 @@ import { Collection, REST, Routes } from "discord.js";
 import fs from "fs";
 import path from "path";
 
+/**
+ * loadCommands is used to load the bot's slash commands from the /structure/commands/
+ * 
+ * folder and will execute to display them in your command list.
+ * 
+ * @param clientId
+ * @param token
+ * @returns
+ */
 export async function loadCommands(clientId: string, token: string): Promise<Collection<string, any>> {
     const commandsPath = path.join(__dirname, "../commands");
     const commandFiles = fs.readdirSync(commandsPath).filter((file) => file.endsWith(".ts") || file.endsWith(".js"));

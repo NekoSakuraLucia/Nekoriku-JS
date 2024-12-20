@@ -1,6 +1,13 @@
 import { warn } from "console";
 import { Interaction } from "discord.js";
 
+/**
+ * interactionCreateHandler is used to define the interaction for the bot's commands.
+ * 
+ * @param interaction 
+ * @param commands 
+ * @returns 
+ */
 export default async function interactionCreateHandler(
     interaction: Interaction,
     commands: Map<string, any>
