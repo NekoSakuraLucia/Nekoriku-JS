@@ -1,15 +1,17 @@
 {
   "name": "nekoriku-js",
   "version": "0.0.1",
-  "description": "Nekoriku is a JavaScript package for Discord bots that makes it easier for those who want a music bot but don't want to build it themselves. It provides a music bot with both prefix and slash commands, so you don't need to write the code yourself.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "NekoSakuraLucia",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NekoSakuraLucia/Nekoriku-JS.git"
   },
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/NekoSakuraLucia/Nekoriku-JS/issues"
+  },
+  "description": "Nekoriku is a JavaScript package for Discord bots that makes it easier for those who want a music bot but don't want to build it themselves. It provides a music bot with both prefix and slash commands, so you don't need to write the code yourself.",
+  "homepage": "https://github.com/NekoSakuraLucia/Nekoriku-JS#readme",
   "keywords": [
     "Discord-BOT",
     "MusicBot",
@@ -17,10 +19,16 @@
     "JavaScript",
     "TypeScript"
   ],
-  "author": "NekoSakuraLucia",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/NekoSakuraLucia/Nekoriku-JS/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/NekoSakuraLucia/Nekoriku-JS#readme"
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
 }
