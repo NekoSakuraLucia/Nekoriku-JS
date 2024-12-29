@@ -1,4 +1,5 @@
-import { CommandInteraction, SlashCommandBuilder } from "discord.js";
+import { SlashCommandBuilder } from "discord.js";
+import { Command } from "../types";
 
 const data = new SlashCommandBuilder()
   .setName("ping")
@@ -6,7 +7,7 @@ const data = new SlashCommandBuilder()
 
 module.exports = {
   data: data,
-  execute: async (interaction: CommandInteraction<"cached">) => {
+  execute: async (interaction) => {
     await interaction.reply("Pong!");
   }
-};
+} as Command
